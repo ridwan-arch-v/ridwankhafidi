@@ -1,0 +1,49 @@
+# changelogs
+
+# patch 1.1
+
+    branch {
+        - patch-1.1
+    }
+    add {
+        - readme
+        - gitignore
+        - index.html
+        - contributing
+        - license
+        - src/
+        - src/images
+        - src/images/githubFrame.png
+        - src/images/MainMap.png
+        - src/static/
+        - src/static/css
+        - src/static/js
+        - src/static/js/srip.js
+        - src/static/css/stel.css
+        - .GITHUB/
+        - docs/
+        - docs/prject
+        - docs/repository
+        - docs/school
+        - dll cape jir
+    } 
+    modified {
+        - readme.md
+        - changes
+        - license
+        - 
+    }
+    rename {
+        - docs/
+        - 47 action
+    }
+    delete {
+        - none
+    }
+    tag {
+        - ptc_1.1
+        - commmit = view in [here](https://github.com/ridwan-arch-v/ridwankhafidi/releases/tag/ptc_1.1)
+    }
+    done{}
+
+---
