@@ -46,4 +46,31 @@
     }
     done{}
 
+
+---
+
+# patch 1.2
+
+    branch {
+        - patch-1.2
+    }
+    add {
+        - docs/school/absensi/
+        - src/img/MyAbsensi/
+    } 
+    modified {
+        - idk
+    }
+    rename {
+        - idk
+    }
+    delete {
+        - idk
+    }
+    tag {
+        - ptc_1.2
+        - commmit = view in [here](https://github.com/ridwan-arch-v/ridwankhafidi/releases/tag/ptc_1.2)
+    }
+    done{}
+
 ---
