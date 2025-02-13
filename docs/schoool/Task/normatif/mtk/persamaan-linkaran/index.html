@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persamaan Linkaran || XI Titl 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ridwan-arch-v/CitrusDevTemplates@main/repository/excelenr/site/Style/CitrusCostomCssMdSite.css">
+</head>
+
+<body>
+    <h1 id="persamaan-lingkaran">PERSAMAAN LINGKARAN</h1>
+    <h2 id="apa-itu-lingkaran">Apa itu lingkaran</h2>
+    <p>nah jadi lingkaran itu kayak titik bulat yang banyak kali, dan lingkaran juga punya titik tengan, nah kalau titik
+        tengah ini kita tarik garis lurus kemana pun arah nya au ke atas bawah samping kiri kanan pasti panjang nya sama
+        nag garis dari titik tengah ke ujung sisi lingkaran nama nya itu jari jari atau <code>r</code> istilah nya</p>
+    <p>kalau udah ngerti sola linglarahn sekarang kita masuk ke</p>
+    <h2 id="apa-itu-persamaan-lingkaran">Apa itu persamaan lingkaran</h2>
+    <p>persamaan lingkaran itu kayak cara untuk nyebutin semua titik yang ada di sekeliling lingkaran di bidang
+        kartesius (koordinat x dan y). Nah, bentuk umumnya gini:</p>
+    <p><img src="https://github.com/ridwan-arch-v/ridwankhafidi/tree/main/src/images/image1.1.png" alt="image1.1"></p>
+    <p>lalu persamaan lingkaran juga ada 2 unsur penting yang harus klen tau kayak di bawah ini contoh nya</p>
+    <p>Jika pusatnya <code>(0,0)</code> dan <code>jari-jari itu r</code>, maka bentuk persamaannya
+        <code>x2 + y2 = r2</code></p>
+    <p>Jika pusatnya <code>(a,b)</code> dan <code>jari-jari itu r</code>, maka bentuk persamaannya
+        <code>(x – a)2 + (y – b)2 = r2</code></p>
+    <p>gampang kan ingat nya?</p>
+    <table>
+        <thead>
+            <tr>
+                <th><strong>Pusat</strong></th>
+                <th><strong>Jari-Jari</strong></th>
+                <th><strong>Persamaan Lingkaran</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>(0, 0)</td>
+                <td>r</td>
+                <td>x² + y² = r²</td>
+            </tr>
+            <tr>
+                <td>(a, b)</td>
+                <td>r</td>
+                <td>(x - a)² + (y - b)² = r²</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>kalo mau tentuin persamaan lingkaran sama pusatnya, ada dua cara,</p>
+    <ol>
+        <li>
+            <p>kalo persamaannya kayak gini:</p>
+            <p><code>(x – a)2 + (y – b)2 = r2</code></p>
+            <p>berarti pusat lingkarannya itu di titik <code>(a,b)</code> trus jari jari nya itu <code>r</code></p>
+        </li>
+        <li>
+            <p>kalau persamaannya kayak gini:</p>
+            <p><code>x² + y² + Ax + By + C = 0</code></p>
+            <p>maka pusat lingkarannya adalah <code>(-A/2, -B/2)</code>, dan jari-jarinya bisa dihitung pakai rumus:</p>
+            <p><code>r = √((A² + B²)/4 - C)</code></p>
+        </li>
+    </ol>
+    <table>
+        <thead>
+            <tr>
+                <th><strong>Persamaan Lingkaran</strong></th>
+                <th><strong>Pusat</strong></th>
+                <th><strong>Jari-Jari</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>(x - a)² + (y - b)² = r²</td>
+                <td>(a, b)</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>x² + y² + Ax + By + C = 0</td>
+                <td>(-A/2, -B/2)</td>
+                <td>√((A² + B²)/4 - C)</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2 id="jabwan-soal-presentasi">Jabwan soal presentasi</h2>
+    <ul>
+        <li>Tentukan persamaan lingkaran yang memiliki pusat di titik (0,0) dan jari-jari 5</li>
+    </ul>
+    <p><strong>Jawab</strong>:</p>
+    <pre><code>dik titik pusat = (<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)
+jari jari       = <span class="hljs-number">5</span>
+jawab {
+
+    x² + y² = r²
+    x² + y² = <span class="hljs-number">5</span>²
+    x² + y² = <span class="hljs-number">25</span> <span class="hljs-comment">// # Done</span>
+
+}
+</code></pre>
+    <ul>
+        <li>Tentukan persamaan lingkaran yang memiliki pusat di titik (2,−3) dan jari-jari 4</li>
+    </ul>
+    <p><strong>Jawab</strong>:</p>
+    <pre><code>dik titik pusat = (<span class="hljs-number">2</span>,<span class="hljs-number">-3</span>)
+a               = <span class="hljs-number">2</span>
+b               = <span class="hljs-number">-3</span>
+jari jari       = <span class="hljs-number">4</span>
+jawab {
+    (x - a)² + (y - b)² = r²
+    (x - <span class="hljs-number">2</span>)² + (y - (<span class="hljs-number">-3</span>))² = <span class="hljs-number">4</span>²
+    x² <span class="hljs-number">-4</span>x + <span class="hljs-number">4</span> + y² + <span class="hljs-number">6</span>y + <span class="hljs-number">9</span> = <span class="hljs-number">16</span>
+    x² + y² <span class="hljs-number">-4</span>x + <span class="hljs-number">6</span>y + <span class="hljs-number">4</span> + <span class="hljs-number">9</span> = <span class="hljs-number">16</span>
+    x² + y² <span class="hljs-number">-4</span>x + <span class="hljs-number">6</span>y + <span class="hljs-number">13</span> = <span class="hljs-number">16</span> <span class="hljs-comment">// # done</span>
+}
+</code></pre>
+    <ul>
+        <li>Tentukan persamaan lingkaran yang memiliki pusat di titik (−1,5) dan jari-jari 6</li>
+    </ul>
+    <p><strong>jawab</strong>:</p>
+    <pre><code>dik titik pusat = (<span class="hljs-number">-1</span>,<span class="hljs-number">5</span>)
+jari jari       = <span class="hljs-number">6</span>
+a               = <span class="hljs-number">-1</span>
+b               = <span class="hljs-number">5</span>
+jawab {
+    (x - a)² + (y - b)² = r²
+    (x - (<span class="hljs-number">-1</span>))² + (y - <span class="hljs-number">5</span>)² = <span class="hljs-number">6</span>²
+    x² + <span class="hljs-number">1</span>x + <span class="hljs-number">1</span> + y² <span class="hljs-number">-10</span>y - <span class="hljs-number">25</span> = <span class="hljs-number">6</span>²
+    x² + y² + <span class="hljs-number">1</span>x - <span class="hljs-number">10</span>y + <span class="hljs-number">1</span> - <span class="hljs-number">25</span> = <span class="hljs-number">36</span>
+    x² + y² + <span class="hljs-number">1</span>x - <span class="hljs-number">10</span>y + <span class="hljs-number">-24</span> = <span class="hljs-number">36</span> <span class="hljs-comment">// # done</span>
+}
+</code></pre>
+    <hr>
+    <h2 id="thnks-for-wching">Thnks for wching</h2>
+    <footer style="text-align: center; padding: 20px; background-color: #f8f8f8; border-top: 2px solid #ddd;">
+        <footer style="text-align: center; padding: 20px; background-color: #f8f8f8; border-top: 2px solid #ddd;">
+            <div>
+              <p style="font-size: 18px;">Author: <strong>Ridwan Khafidi</strong></p>
+            </div>
+            <div>
+              <img src="https://github.com/ridwan-arch-v/ridwankhafidi/tree/main/src/images/github-mark-white.svg" alt="GitHub Logo" style="width: 30px; vertical-align: middle; margin-right: 10px;">
+              <p style="display: inline; font-size: 16px;">GitHub: 
+                <a href="https://github.com/ridwan-arch-v" target="_blank" style="text-decoration: none; color: #333; font-weight: bold;">ridwan-arch-v</a>
+              </p>
+            </div>
+          </footer>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/ridwan-arch-v/CitrusDevTemplates@main/repository/excelenr/site/Script/main.js"></script>
+</body>
+
+</html>
