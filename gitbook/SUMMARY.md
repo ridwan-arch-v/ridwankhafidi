@@ -22,10 +22,6 @@
   - [PPKWU](docs/homework_Docs/produktif_wekk/ppkwu/README.md)
 {{< /toggle >}}
 
-## My Organization
-- [Organization Docs](docs/my_organization/README.md)
-- [Repository Docs](docs/my_organization/repository_docs/README.md)
-
 ## Repository Docs
 {{< toggle >}} repository_Docs
 - [repository_Docs](docs/repository_Docs/README.md)
