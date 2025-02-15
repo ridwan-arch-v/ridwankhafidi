@@ -81,6 +81,6 @@ Tujuan saya membuat Dokumentais ini adalah untuk mempermudah kita agar semua tug
 
 ---
 
-## Tabel Dokumetasi
+## Dokumntasi
 
-## Part 2
+> Jika kalian ingin melihat dokumntasi lengkap tentang projetc dan repository silahkan clik di nav bar sebelah kanan akan ada nama nya `repository-dods` untuk melihat dokumentasoi repository, dan untuk `homework-docs` untuk melihat dokumtasi tugas sekolah atau pr
