@@ -1,4 +1,4 @@
-# About Me
+# ridwankhafidi
 
 perkenalkan nama sya `MUHAMMAD RIDUWAN KHAFIDI`, biasa di panggil ridwan gua sekarang berada di jenjang smk, gua berumus 17 tahun, gua tinggal di indonesia,batam. oke disini sya akan menunjukan project dan tugas apa saja yang sednag syaa kerjakan
 
@@ -79,8 +79,19 @@ Tujuan saya membuat Dokumentais ini adalah untuk mempermudah kita agar semua tug
 }
 ```
 
----
+***
 
 ## Dokumntasi
 
 > Jika kalian ingin melihat dokumntasi lengkap tentang projetc dan repository silahkan clik di nav bar sebelah kanan akan ada nama nya `repository-dods` untuk melihat dokumentasoi repository, dan untuk `homework-docs` untuk melihat dokumtasi tugas sekolah atau pr
+
+{% content-ref url="docs/repository_Docs/Repository.md" %}
+[Repository.md](docs/repository_Docs/Repository.md)
+{% endcontent-ref %}
+
+{% content-ref url="docs/homework_Docs/Homework.md" %}
+[Homework.md](docs/homework_Docs/Homework.md)
+{% endcontent-ref %}
+
+***
+
