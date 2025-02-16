@@ -2,3 +2,4 @@ setup/
 .env
 trash/
 tools/
+bot/discord_token.env

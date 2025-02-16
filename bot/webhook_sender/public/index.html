@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Message to Webhook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+        #response pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Send Message to Discord Webhook</h2>
+        <form id="webhookForm">
+            <input type="text" id="webhook_url" class="input-field" placeholder="Enter Webhook URL" required>
+            <textarea id="message" class="input-field" placeholder="Enter message" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+        <div id="response"></div>
+    </div>
+
+    <script>
+        document.getElementById("webhookForm").addEventListener("submit", async function(e) {
+            e.preventDefault();
+
+            const webhookUrl = document.getElementById("webhook_url").value;
+            const message = document.getElementById("message").value;
+
+            const responseDiv = document.getElementById("response");
+
+            try {
+                const response = await fetch('http://localhost:3000/send', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        webhook_url: webhookUrl,
+                        message: message,
+                    })
+                });
+
+                const json = await response.json();
+                if (json.status === 'success') {
+                    responseDiv.innerHTML = `
+                        <h3>Message Sent Successfully!</h3>
+                        <pre>${json.formatted_json}</pre>
+                    `;
+                } else {
+                    responseDiv.innerHTML = `
+                        <h3>Error:</h3><pre>${JSON.stringify(json, null, 2)}</pre>
+                    `;
+                }
+            } catch (error) {
+                responseDiv.innerHTML = `<h3>Failed to send message:</h3><pre>${error.message}</pre>`;
+            }
+        });
+    </script>
+</body>
+</html>

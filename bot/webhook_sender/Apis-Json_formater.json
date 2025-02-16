@@ -1,0 +1,4 @@
+{
+    "webhookUrl": "https://discord.com/api/webhooks/your-webhook-id/your-webhook-token",
+    "message": "Hello, this is a test message sent via the API!"
+}
